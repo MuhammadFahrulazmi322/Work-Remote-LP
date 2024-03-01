@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+.attribution { font-size: 11px; text-align: center; padding: 20px 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.container-navigation{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+
+.container-logo .brand-logo{
+    width: 80px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 14px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  position: relative;
+}
+
+.navigation li a {
+  color: #8a8888;
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navigation li a:hover {
+  background-color: #f2f2f2;
+  color: #000;
+
+}
+.container-dropdown{
+    display: flex;
+    align-items: center;
+}
+.icon-dropdown img{
+  display: flex;
+  align-items: center;
+  width: 10px;
+
+}
+.dropdown-features{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  transform: translateY(100px) translateX(-70px);
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 30px 10px 10px 10px;
+  border-radius: 15px;
+
+}
+.dropdown-company{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  transform: translateY(90px) translateX(-10px);
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 20px 10px 10px 10px;
+  border-radius: 15px;
+}
+
+.child-dropdown{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.child-dropdown img{
+    width: 16px;
+}
+
+.dropdown-features li a {
+    color: #8a8888;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-company li a {
+  color: #8a8888;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-features li a:hover {
+  color: #000;
+}
+.dropdown-company li a:hover {
+  color: #000;
+}
+
+
+.has-dropdown:hover .dropdown-features {
+  display: block;
+}
+.has-dropdown:hover .dropdown-company {
+  display: block;
+}
+
+#js-menu {
+  display: none;
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+  }
+
+  .dropdown {
+    position: static;
+  }
+
+  #js-menu {
+    display: block;
+  }
+}
+
+.container-login{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+}
+
+.container-login .btn-login{
+  color: #8a8888;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+
+}
+.container-login .btn-login:hover{
+    color: #000;   
+}
+
+.container-login .btn-register{
+    color: #8a8888;
+    font-size: 14px;
+    border: 1px solid #8a8888;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+
+  }
+  .container-login .btn-register:hover{
+      color: #000;
+      border: 1px solid #000;
+
+  }
+  section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .left-header{
+    width: 40%;
+  }
+  .left-header .main-title{
+    font-size: 80px;
+    line-height: 72px;
+  }
+  .left-header .paragraph{
+    color: #8a8888;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .left-header .btn-learnmore{
+    padding: 15px 20px;
+    border-radius: 15px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    font-size: 20px;
+    font-weight: 600;
+
+  }
+  .left-header .btn-learnmore:hover{
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+
+  }
+  .client {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+    margin-top: 60px;
+}
+  .client img{
+    width: 100px;
+
+  }
+  .right-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right-header img{
+
+    width: 400px;
+  }

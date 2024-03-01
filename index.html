@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var menuButton = document.getElementById("js-menu");
+      var navigation = document.querySelector(".navigation");
+    
+      menuButton.addEventListener("click", function() {
+        navigation.classList.toggle("active");
+      });
+    });
+    
+    </script>
+</head>
+<body>
+  <nav>
+    <div class="container-navigation">
+      <img class="brand-logo" src="./images/logo.svg" alt="Logo">
+      <ul class="navigation">
+        <li class="container-dropdown has-dropdown js-dropdown">
+          <a class="" href="#">
+            Features
+          </a>
+          <span class="icon-dropdown">
+            <img src="./images/icon-arrow-down.svg" alt="icon-down">
+          </span>  
+          
+          
+          <ul class="dropdown-features">
+            <li class="child-dropdown">
+              <img src="./images/icon-todo.svg" alt="">
+              <a href="#project-one">Todo List</a>
+            </li>
+            <li class="child-dropdown">
+              <img src="./images/icon-calendar.svg" alt="">
+              <a href="#project-one">Calender</a>
+            </li>
+            <li class="child-dropdown">
+              <img src="./images/icon-reminders.svg" alt="">
+              <a href="#project-one">Reminders</a>
+            </li>
+            <li class="child-dropdown">
+              <img src="./images/icon-planning.svg" alt="">
+              <a href="#project-one">Planning</a>
+            </li>
+          </ul>
+  
+        </li>
+  
+        <li class="container-dropdown has-dropdown js-dropdown">
+          <a class="" href="#">
+            Company
+          </a>
+          <span class="icon-dropdown">
+            <img src="./images/icon-arrow-down.svg" alt="icon-down">
+          </span>  
+          
+          
+          <ul class="dropdown-company">
+            <li class="child-dropdown">
+              <a href="#project-one">History</a>
+            </li>
+            <li class="child-dropdown">
+              <a href="#project-one">Our Team</a>
+            </li>
+            <li class="child-dropdown">
+              <a href="#project-one">Blog</a>
+            </li>
+          </ul>
+  
+        </li>
+  
+        <li><a href="#hero">Careers</a></li>
+        <li><a href="#about">About</a></li>
+  
+      </ul>
+    </div> 
+    <div class="container-login">
+      <button class="btn-login">Login</button>
+      <button class="btn-register">Register</button>
+  </div>
+  <button id="js-menu" aria-label="Toggle menu" class="hamburger">&#9776;</button>
+  </nav>
+    
+  <section>
+    <div class="left-header">
+      <h1 class="main-title">Make remote work</h1>
+      <h6 class="paragraph">Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.
+      </h6>
+      <button class="btn-learnmore">Learn more</button>
+      <div class="client">
+        <img src="./images//client-databiz.svg" alt="databiz">
+        <img src="./images//client-audiophile.svg" alt="audiophile">
+        <img src="./images//client-meet.svg" alt="meet">
+        <img src="./images//client-maker.svg" alt="maker">
+
+
+      </div>
+    </div>
+    <div class="right-header">
+      <img src="./images/image-hero-desktop.png" alt="">
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  
+  
+ 
+</body>
+</html>
